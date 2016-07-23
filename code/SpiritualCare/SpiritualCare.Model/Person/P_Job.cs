@@ -8,18 +8,16 @@ using System.Threading.Tasks;
 
 namespace SpiritualCare.Model.Person
 {
-    public class ContactWay:ModelBase
+    public class P_Job:ModelBase
     {
-        [Required]
-        [Index]
-        public long Person_ID { get; set; }
-        [Required]
         [MaxLength(20)]
         [Index]
-        public string ContactType { get; set; }
-        [Required]
-        [MaxLength(50)]
-        public string Value { get; set; }
+        public string Profession { get; set; }
+        [MaxLength(30)]
+        [Index]
+        public string JobTitle { get; set; }
+        [MaxLength(70)]
+        public string Employer { get; set; }
         public string Comment { get; set; }
     }
 }

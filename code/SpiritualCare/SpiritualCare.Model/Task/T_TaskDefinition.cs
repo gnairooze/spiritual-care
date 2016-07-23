@@ -6,14 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpiritualCare.Model.Lookup
+namespace SpiritualCare.Model.Task
 {
-    public class LookupBase:ModelBase
+    public class T_TaskDefinition:ModelBase
     {
         [Required]
-        [MaxLength(50)]
-        [Index(IsUnique = true)]
-        public string Value { get; set; }
+        [MaxLength(20)]
+        [Index(IsUnique =true)]
+        public string Name { get; set; }
         public string Description { get; set; }
+        public int DueDays { get; set; }
     }
 }

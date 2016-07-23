@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SpiritualCare.Model.Person
 {
-    public class ContactWay:ModelBase
+    public class P_Person_Expected_Meeting:ModelBase
     {
         [Required]
         [Index]
@@ -16,10 +16,11 @@ namespace SpiritualCare.Model.Person
         [Required]
         [MaxLength(20)]
         [Index]
-        public string ContactType { get; set; }
+        public string Church { get; set; }
         [Required]
-        [MaxLength(50)]
-        public string Value { get; set; }
+        [MaxLength(20)]
+        [Index]
+        public string MeetingName { get; set; }
         public string Comment { get; set; }
     }
 }

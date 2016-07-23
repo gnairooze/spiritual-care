@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70B2CF3E-3518-4380-9CFB-D7A8B5E3A165}</ProjectGuid>
+    <ProjectGuid>{063C1007-BA25-4250-B705-7929EA474421}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SpiritualCare.Model</RootNamespace>
-    <AssemblyName>SpiritualCare.Model</AssemblyName>
+    <RootNamespace>SpiritualCare.Data</RootNamespace>
+    <AssemblyName>SpiritualCare.Data</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -49,57 +49,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity\CareContact\A_CC_CareContact.cs" />
-    <Compile Include="Activity\CareContact\A_CC_CareContactPerson.cs" />
-    <Compile Include="Activity\CareContact\A_CC_CareContactServant.cs" />
-    <Compile Include="Lookup\L_Address.cs" />
-    <Compile Include="Lookup\L_ContactMean.cs" />
-    <Compile Include="Lookup\L_ContactSort.cs" />
-    <Compile Include="Lookup\L_FamilyRole.cs" />
-    <Compile Include="Lookup\L_Father.cs" />
-    <Compile Include="Lookup\LookupBase.cs" />
-    <Compile Include="Lookup\L_Profession.cs" />
-    <Compile Include="Lookup\L_SocialStatus.cs" />
-    <Compile Include="Lookup\L_TaskStatus.cs" />
-    <Compile Include="ModelBase.cs" />
-    <Compile Include="Person\P_Address.cs" />
-    <Compile Include="Person\P_ContactWay3.cs" />
-    <Compile Include="Person\P_ContactWay2.cs" />
-    <Compile Include="Person\P_ContactWay1.cs" />
-    <Compile Include="Person\ContactWay.cs" />
-    <Compile Include="Person\P_Education.cs" />
-    <Compile Include="Person\P_Email.cs" />
-    <Compile Include="Person\P_Facebook.cs" />
-    <Compile Include="Person\P_Job.cs" />
-    <Compile Include="Lookup\L_Church.cs" />
-    <Compile Include="Lookup\L_ChurchService.cs" />
-    <Compile Include="Lookup\L_City.cs" />
-    <Compile Include="Lookup\L_Country.cs" />
-    <Compile Include="Lookup\L_Diocese.cs" />
-    <Compile Include="Lookup\L_Education.cs" />
-    <Compile Include="Lookup\L_Job.cs" />
-    <Compile Include="Lookup\L_Meeting.cs" />
-    <Compile Include="Lookup\L_Street.cs" />
-    <Compile Include="Person\P_Person_Actual_Meeting.cs" />
-    <Compile Include="Person\P_Person_Address.cs" />
-    <Compile Include="Person\P_Person_Education.cs" />
-    <Compile Include="Person\P_Person_Expected_Meeting.cs" />
-    <Compile Include="Person\P_Person_Job.cs" />
-    <Compile Include="Person\P_Person_Person.cs" />
-    <Compile Include="Person\P_Phone.cs" />
-    <Compile Include="Person\P_Person.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="SpiritualCareContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Person\P_Viber.cs" />
-    <Compile Include="Person\P_WhatsApp.cs" />
-    <Compile Include="Task\T_Task.cs" />
-    <Compile Include="Task\T_TaskDefinition.cs" />
-    <Compile Include="Task\T_TaskPerson.cs" />
-    <Compile Include="Task\T_TaskServant.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpiritualCare.Model\SpiritualCare.Model.csproj">
+      <Project>{70b2cf3e-3518-4380-9cfb-d7a8b5e3a165}</Project>
+      <Name>SpiritualCare.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

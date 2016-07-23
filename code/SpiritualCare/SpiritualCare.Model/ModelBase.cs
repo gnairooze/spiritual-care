@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace SpiritualCare.Model
 {
-    [NotMapped]
     public class ModelBase
     {
         [Key]

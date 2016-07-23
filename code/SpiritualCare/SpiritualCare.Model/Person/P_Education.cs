@@ -8,16 +8,12 @@ using System.Threading.Tasks;
 
 namespace SpiritualCare.Model.Person
 {
-    public class ContactWay:ModelBase
+    public class P_Education:ModelBase
     {
-        [Required]
-        [Index]
-        public long Person_ID { get; set; }
         [Required]
         [MaxLength(20)]
         [Index]
-        public string ContactType { get; set; }
-        [Required]
+        public string EducationType { get; set; }
         [MaxLength(50)]
         public string Value { get; set; }
         public string Comment { get; set; }

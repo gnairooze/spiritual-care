@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.Model", "SpiritualCare.Model\SpiritualCare.Model.csproj", "{70B2CF3E-3518-4380-9CFB-D7A8B5E3A165}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.Data", "SpiritualCare.Data\SpiritualCare.Data.csproj", "{063C1007-BA25-4250-B705-7929EA474421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.TempWWW", "SpiritualCare.TempWWW\SpiritualCare.TempWWW.csproj", "{97F25063-C62E-42EC-A4C9-6F2C8986AADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.TempWWW.Tests", "SpiritualCare.TempWWW.Tests\SpiritualCare.TempWWW.Tests.csproj", "{0065F824-F757-4582-902C-DD1CB3AA5D56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{70B2CF3E-3518-4380-9CFB-D7A8B5E3A165}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70B2CF3E-3518-4380-9CFB-D7A8B5E3A165}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70B2CF3E-3518-4380-9CFB-D7A8B5E3A165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{063C1007-BA25-4250-B705-7929EA474421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063C1007-BA25-4250-B705-7929EA474421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063C1007-BA25-4250-B705-7929EA474421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063C1007-BA25-4250-B705-7929EA474421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F25063-C62E-42EC-A4C9-6F2C8986AADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F25063-C62E-42EC-A4C9-6F2C8986AADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F25063-C62E-42EC-A4C9-6F2C8986AADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F25063-C62E-42EC-A4C9-6F2C8986AADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0065F824-F757-4582-902C-DD1CB3AA5D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0065F824-F757-4582-902C-DD1CB3AA5D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0065F824-F757-4582-902C-DD1CB3AA5D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0065F824-F757-4582-902C-DD1CB3AA5D56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
