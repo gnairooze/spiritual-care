@@ -12,9 +12,9 @@ namespace SpiritualCare.Model.Activity.CareContact
     {
         [Required]
         [Index("IDX_CareContact_Servant", IsUnique = true, Order = 1)]
-        public long CareContactID { get; set; }
+        public long CareContact_ID { get; set; }
         [Required]
         [Index("IDX_CareContact_Servant", IsUnique = true, Order = 2)]
-        public long ServantID { get; set; }
+        public long Servant_ID { get; set; }
     }
 }

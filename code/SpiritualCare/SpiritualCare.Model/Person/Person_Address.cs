@@ -8,10 +8,13 @@ using System.Threading.Tasks;
 
 namespace SpiritualCare.Model.Person
 {
-    public class WhatsApp:ContactWay
+    public class Person_Address:ModelBase
     {
         [Required]
-        [Index]
-        public bool IsDefault { get; set; }
+        [Index("IDX_Person_Address",IsUnique =true, Order =1)]
+        public long Person_ID { get; set; }
+        [Required]
+        [Index("IDX_Person_Address", IsUnique = true, Order = 2)]
+        public long Address_ID { get; set; }
     }
 }

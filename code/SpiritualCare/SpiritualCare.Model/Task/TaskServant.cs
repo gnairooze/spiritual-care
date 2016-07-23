@@ -12,9 +12,9 @@ namespace SpiritualCare.Model.Task
     {
         [Required]
         [Index("IDX_Task_Servant", IsUnique = true, Order = 1)]
-        public long TaskID { get; set; }
+        public long Task_ID { get; set; }
         [Required]
         [Index("IDX_Task_Servant", IsUnique = true, Order = 2)]
-        public long PersonID { get; set; }
+        public long Person_ID { get; set; }
     }
 }

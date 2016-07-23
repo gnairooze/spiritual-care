@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpiritualCare.Model.Person
 {
-    class ContactWay1
+    public class ContactWay1:ContactWay
     {
     }
 }

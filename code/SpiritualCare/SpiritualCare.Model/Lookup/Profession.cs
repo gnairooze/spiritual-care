@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpiritualCare.Model.Servant
+namespace SpiritualCare.Model.Lookup
 {
-    public class Contact:ModelBase
+    public class Profession:LookupBase
     {
     }
 }

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace SpiritualCare.Model.Lookup
 {
+    [NotMapped]
     public class LookupBase:ModelBase
     {
         [Required]

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SpiritualCare.Model.Person
 {
-    class Phone
+    public class Phone:ModelBase
     {
+        public long Person_ID { get; set; }
+
     }
 }

@@ -11,8 +11,8 @@ namespace SpiritualCare.Model.Task
     public class Task:ModelBase
     {
         [Required]
-        public long TaskDefinitionID { get; set; }
-        public long CareContactID { get; set; }
+        public long TaskDefinition_ID { get; set; }
+        public long CareContact_ID { get; set; }
         [Required]
         [MaxLength(70)]
         public string FamilyName { get; set; }
