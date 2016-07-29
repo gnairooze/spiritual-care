@@ -10,30 +10,173 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Spiritual Care", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activity <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="~/A_CC_CareContact/Index">Care Contact</a>
+                            </li>
+                            <li>
+                                <a href="~/A_CC_CareContactPerson/Index">Care Contact Person</a>
+                            </li>
+                            <li>
+                                <a href="~/A_CC_CareContactServant/Index">Care Contact Servant</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lookups <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="~/L_Address/Index">Address</a>
+                            </li>
+                            <li>
+                                <a href="~/L_Church/Index">Churches</a>
+                            </li>
+                            <li>
+                                <a href="~/L_ChurchService/Index">Church Services</a>
+                            </li>
+                            <li>
+                                <a href="~/L_City/Index">Cities</a>
+                            </li>
+                            <li>
+                                <a href="~/L_ContactMean/Index">Contact Mean</a>
+                            </li>
+                            <li>
+                                <a href="~/L_ContactSort/Index">Contact Sorts</a>
+                            </li>
+                            <li>
+                                <a href="~/L_Country/Index">Countries</a>
+                            </li>
+                            <li>
+                                <a href="~/L_Diocese/Index">Dioceses</a>
+                            </li>
+                            <li>
+                                <a href="~/L_Education/Index">Educations</a>
+                            </li>
+                            <li>
+                                <a href="~/L_FamilyRole/Index">Family Roles</a>
+                            </li>
+                            <li>
+                                <a href="~/L_Father/Index">Fathers</a>
+                            </li>
+                            <li>
+                                <a href="~/L_Job/Index">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="~/L_Meeting/Index">Meetings</a>
+                            </li>
+                            <li>
+                                <a href="~/L_Profession/Index">Professions</a>
+                            </li>
+                            <li>
+                                <a href="~/L_SocialStatus/Index">Social Status</a>
+                            </li>
+                            <li>
+                                <a href="~/L_Street/Index">Streets</a>
+                            </li>
+                            <li>
+                                <a href="~/L_TaskStatus/Index">Task Status</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Person <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="~/P_Address/Index">Person Address</a>
+                            </li>
+                            <li>
+                                <a href="~/P_ContactWay1/Index">Person Contact Way 1</a>
+                            </li>
+                            <li>
+                                <a href="~/P_ContactWay2/Index">Person Contact Way 2</a>
+                            </li>
+                            <li>
+                                <a href="~/P_ContactWay3/Index">Person Contact Way 3</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Education/Index">Person Education</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Email/Index">Person Email</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Facebook/Index">Person Facebook</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Job/Index">Person Job</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Person/Index">Person</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Person_Actual_Meeting/Index">Person Actual Meeting Relation</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Person_Address/Index">Person Address Relation</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Person_Education/Index">Person Education Relation</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Person_Expected_Meeting/Index">Person Expected Meeting</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Person_Job/Index">Person Job Relation</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Person_Person/Index">Person Person Relation</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Phone/Index">Person Phone</a>
+                            </li>
+                            <li>
+                                <a href="~/P_Viber/Index">Person Viber</a>
+                            </li>
+                            <li>
+                                <a href="~/P_WhatsApp/Index">Person WhatsApp</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Task <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="~/T_Task/Index">Task</a>
+                            </li>
+                            <li>
+                                <a href="~/T_TaskDefinition/Index">Task Definition</a>
+                            </li>
+                            <li>
+                                <a href="~/T_TaskPerson/Index">Task Person Relation</a>
+                            </li>
+                            <li>
+                                <a href="~/T_TaskServant/Index">Task Servant Relation</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>Open Source - Spiritual Care</p>
         </footer>
     </div>
 

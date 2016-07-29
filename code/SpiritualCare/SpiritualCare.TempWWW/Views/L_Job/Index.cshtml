@@ -1,11 +1,12 @@
 ﻿@model IEnumerable<SpiritualCare.Model.Lookup.L_Job>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Lookup Job - Index";
+    ViewBag.Module = "Lookup Job";
 }
 
 <h2>Index</h2>
-
+<h4>@ViewBag.Module</h4>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>

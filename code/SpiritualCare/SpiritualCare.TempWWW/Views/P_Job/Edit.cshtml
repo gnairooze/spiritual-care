@@ -1,7 +1,8 @@
 ﻿@model SpiritualCare.Model.Person.P_Job
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Person Job - Edit";
+    ViewBag.Module = "Person Job";
 }
 
 <h2>Edit</h2>
@@ -12,7 +13,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>P_Job</h4>
+        <h4>@ViewBag.Module</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ID)

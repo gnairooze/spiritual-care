@@ -1,7 +1,8 @@
 ﻿@model SpiritualCare.Model.Task.T_TaskServant
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Task Servant Relation - Create";
+    ViewBag.Module = "Task Servant Relation";
 }
 
 <h2>Create</h2>
@@ -12,7 +13,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>T_TaskServant</h4>
+        <h4>@ViewBag.Module</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">

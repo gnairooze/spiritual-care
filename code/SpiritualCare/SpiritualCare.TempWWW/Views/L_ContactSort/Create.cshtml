@@ -1,7 +1,8 @@
 ﻿@model SpiritualCare.Model.Lookup.L_ContactSort
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Lookup Contact Sort - Create";
+    ViewBag.Module = "Lookup Contact Sort";
 }
 
 <h2>Create</h2>
@@ -12,7 +13,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>L_ContactSort</h4>
+        <h4>@ViewBag.Module</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">

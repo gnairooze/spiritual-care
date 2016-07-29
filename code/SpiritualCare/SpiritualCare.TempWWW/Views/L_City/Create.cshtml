@@ -1,7 +1,8 @@
 ﻿@model SpiritualCare.Model.Lookup.L_City
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Lookup City - Create";
+    ViewBag.Module = "Lookup City";
 }
 
 <h2>Create</h2>
@@ -12,7 +13,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>L_City</h4>
+        <h4>@ViewBag.Module</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">

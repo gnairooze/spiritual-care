@@ -1,7 +1,8 @@
 ﻿@model SpiritualCare.Model.Person.P_Phone
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Person Phone - Create";
+    ViewBag.Module = "Person Phone";
 }
 
 <h2>Create</h2>
@@ -12,7 +13,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>P_Phone</h4>
+        <h4>@ViewBag.Module</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">

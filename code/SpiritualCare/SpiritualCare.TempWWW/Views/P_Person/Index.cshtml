@@ -1,11 +1,12 @@
 ﻿@model IEnumerable<SpiritualCare.Model.Person.P_Person>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Person - Index";
+    ViewBag.Module = "Person";
 }
 
 <h2>Index</h2>
-
+<h4>@ViewBag.Module</h4>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>

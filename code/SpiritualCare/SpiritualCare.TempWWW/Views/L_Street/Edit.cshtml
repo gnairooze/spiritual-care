@@ -1,7 +1,8 @@
 ﻿@model SpiritualCare.Model.Lookup.L_Street
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Lookup Street - Edit";
+    ViewBag.Module = "Lookup Street";
 }
 
 <h2>Edit</h2>
@@ -12,7 +13,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>L_Street</h4>
+        <h4>@ViewBag.Module</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ID)

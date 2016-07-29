@@ -1,7 +1,8 @@
 ﻿@model SpiritualCare.Model.Activity.CareContact.A_CC_CareContactServant
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Care Contact Servant - Edit";
+    ViewBag.Module = "Care Contact Servant";
 }
 
 <h2>Edit</h2>
@@ -12,7 +13,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>A_CC_CareContactServant</h4>
+        <h4>@ViewBag.Module</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ID)

@@ -1,7 +1,8 @@
 ﻿@model SpiritualCare.Model.Task.T_TaskDefinition
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Task Definition - Edit";
+    ViewBag.Module = "Task Definition";
 }
 
 <h2>Edit</h2>
@@ -12,7 +13,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>T_TaskDefinition</h4>
+        <h4>@ViewBag.Module</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ID)
