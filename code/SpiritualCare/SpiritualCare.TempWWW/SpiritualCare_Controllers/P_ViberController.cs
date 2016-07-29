@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: P_Viber
         public ActionResult Index()
         {
-            return View(db.P_Vibers.ToList());
+            return View(db.P_Vibers.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: P_Viber/Details/5

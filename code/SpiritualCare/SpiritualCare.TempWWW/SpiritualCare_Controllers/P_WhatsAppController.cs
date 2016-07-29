@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: P_WhatsApp
         public ActionResult Index()
         {
-            return View(db.P_WhatsApps.ToList());
+            return View(db.P_WhatsApps.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: P_WhatsApp/Details/5

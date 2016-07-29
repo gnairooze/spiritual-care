@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: P_Person_Expected_Meeting
         public ActionResult Index()
         {
-            return View(db.P_Person_Expected_Meetings.ToList());
+            return View(db.P_Person_Expected_Meetings.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: P_Person_Expected_Meeting/Details/5

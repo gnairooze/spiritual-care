@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: L_ContactMean
         public ActionResult Index()
         {
-            return View(db.L_ContactMeans.ToList());
+            return View(db.L_ContactMeans.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: L_ContactMean/Details/5

@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: L_SocialStatus
         public ActionResult Index()
         {
-            return View(db.L_SocialStatuses.ToList());
+            return View(db.L_SocialStatuses.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: L_SocialStatus/Details/5

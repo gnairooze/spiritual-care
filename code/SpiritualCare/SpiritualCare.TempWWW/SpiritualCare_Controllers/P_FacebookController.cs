@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: P_Facebook
         public ActionResult Index()
         {
-            return View(db.P_Facebooks.ToList());
+            return View(db.P_Facebooks.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: P_Facebook/Details/5

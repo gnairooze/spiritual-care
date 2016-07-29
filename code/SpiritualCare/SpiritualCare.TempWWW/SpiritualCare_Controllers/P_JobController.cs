@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: P_Job
         public ActionResult Index()
         {
-            return View(db.P_Jobs.ToList());
+            return View(db.P_Jobs.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: P_Job/Details/5

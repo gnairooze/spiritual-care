@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: L_FamilyRole
         public ActionResult Index()
         {
-            return View(db.L_FamilyRoles.ToList());
+            return View(db.L_FamilyRoles.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: L_FamilyRole/Details/5

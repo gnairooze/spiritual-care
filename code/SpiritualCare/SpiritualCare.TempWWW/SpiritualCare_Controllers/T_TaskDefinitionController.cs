@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: T_TaskDefinition
         public ActionResult Index()
         {
-            return View(db.T_TaskDefinitions.ToList());
+            return View(db.T_TaskDefinitions.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: T_TaskDefinition/Details/5

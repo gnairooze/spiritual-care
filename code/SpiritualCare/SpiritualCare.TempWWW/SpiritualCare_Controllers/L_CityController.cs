@@ -18,7 +18,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: L_City
         public ActionResult Index()
         {
-            return View(db.L_Cities.ToList());
+            return View(db.L_Cities.OrderByDescending(e => e.ID).ToList());
         }
 
         // GET: L_City/Details/5
