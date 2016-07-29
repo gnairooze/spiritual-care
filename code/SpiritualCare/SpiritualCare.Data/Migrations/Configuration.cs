@@ -20,15 +20,15 @@
                 new Model.Lookup.L_Address { Created = DateTime.Now, Modified = DateTime.Now, Value = "منزل", Description = "عنوان منزل"},
                 new Model.Lookup.L_Address { Created = DateTime.Now, Modified = DateTime.Now, Value = "منزل الاب", Description = "عنوان منزل الاب" }
                 );
-
+            
             context.L_Churches.AddOrUpdate(
                 l => l.Value,
                 new Model.Lookup.L_Church { Created = DateTime.Now, Modified = DateTime.Now, Value = "الشهيد العظيم مار جرجس بالجيوشي بشبرا", Description = "كنيسة الشهيد العظيم مار جرجس بالجيوشي بشبرا القاهرة" },
                  new Model.Lookup.L_Church { Created = DateTime.Now, Modified = DateTime.Now, Value = "السيدة العذراء مريم بالوجوه بشبرا", Description = "كنيسة السيدة العذراء مريم بالوجوه بشبرا القاهرة" },
-                  new Model.Lookup.L_Church { Created = DateTime.Now, Modified = DateTime.Now, Value = "الشهيد العظيم مرقوريوس ابي سيفين والشهيدة العفيفة دميانة بشبرا", Description = "كنيسة الشهيد العظيم مرقوريوس ابي سيفين والشهيدة العفيفة دميانة بشبرا القاهرة" },
+                  new Model.Lookup.L_Church { Created = DateTime.Now, Modified = DateTime.Now, Value = "الشهيد العظيم ابي سيفين والشهيدة العفيفة دميانة", Description = "كنيسة الشهيد العظيم مرقوريوس ابي سيفين والشهيدة العفيفة دميانة بشبرا القاهرة" },
                    new Model.Lookup.L_Church { Created = DateTime.Now, Modified = DateTime.Now, Value = "القديس الانبا انطونيوس بشبرا", Description = "كنيسة القديس الانبا انطونيوس بشبرا القاهرة" }
                 );
-
+            
             context.L_ChurchServices.AddOrUpdate(
                 l => l.Value,
                 new Model.Lookup.L_ChurchService { Created = DateTime.Now, Modified = DateTime.Now, Value = "مار يعقوب - ابتدائي", Description = "اسرة مار يعقوب - ابتدائي" },
@@ -148,6 +148,8 @@
                 new Model.Lookup.L_TaskStatus { Created = DateTime.Now, Modified = DateTime.Now, Value = "منتظرة" },
                 new Model.Lookup.L_TaskStatus { Created = DateTime.Now, Modified = DateTime.Now, Value = "الغيت" }
                 );
+
+    
         }
     }
 }
