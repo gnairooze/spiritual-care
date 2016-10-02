@@ -39,6 +39,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // GET: A_CC_CareContact/Create
         public ActionResult Create()
         {
+            //ViewBag.ContactMeans = 
             return View();
         }
 

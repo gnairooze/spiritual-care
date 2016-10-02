@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.TempWWW", "Sp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.TempWWW.Tests", "SpiritualCare.TempWWW.Tests\SpiritualCare.TempWWW.Tests.csproj", "{0065F824-F757-4582-902C-DD1CB3AA5D56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.API", "SpiritualCare.API\SpiritualCare.API.csproj", "{9699B320-DE62-4787-B1CE-C38D6283326C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.API.Tests", "SpiritualCare.API.Tests\SpiritualCare.API.Tests.csproj", "{A8FE2C04-8B8C-4720-B6D6-3EC2413D3165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.Business", "SpiritualCare.Business\SpiritualCare.Business.csproj", "{F43CBE85-A2D1-437A-B867-AB243156A637}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{0065F824-F757-4582-902C-DD1CB3AA5D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0065F824-F757-4582-902C-DD1CB3AA5D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0065F824-F757-4582-902C-DD1CB3AA5D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9699B320-DE62-4787-B1CE-C38D6283326C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9699B320-DE62-4787-B1CE-C38D6283326C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9699B320-DE62-4787-B1CE-C38D6283326C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9699B320-DE62-4787-B1CE-C38D6283326C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8FE2C04-8B8C-4720-B6D6-3EC2413D3165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FE2C04-8B8C-4720-B6D6-3EC2413D3165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FE2C04-8B8C-4720-B6D6-3EC2413D3165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FE2C04-8B8C-4720-B6D6-3EC2413D3165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43CBE85-A2D1-437A-B867-AB243156A637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43CBE85-A2D1-437A-B867-AB243156A637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43CBE85-A2D1-437A-B867-AB243156A637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43CBE85-A2D1-437A-B867-AB243156A637}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
