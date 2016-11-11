@@ -17,6 +17,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.API.Tests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.Business", "SpiritualCare.Business\SpiritualCare.Business.csproj", "{F43CBE85-A2D1-437A-B867-AB243156A637}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Setup", "SQL Setup", "{B189C946-CFC4-4014-952F-3A19D7A6763A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpiritualCareAuth", "SpiritualCareAuth", "{C410EBF9-5177-49A6-9F01-6FA660C75BBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{F9FB8FAD-E6E5-4009-86E4-2E572E01A014}"
+	ProjectSection(SolutionItems) = preProject
+		SQL Setup\SpiritualCareAuth\Data\Add Roles.sql = SQL Setup\SpiritualCareAuth\Data\Add Roles.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.WWW", "SpiritualCare.WWW\SpiritualCare.WWW.csproj", "{6A5D77AB-2239-456E-9E0F-5C3C2B77491D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,8 +62,16 @@ Global
 		{F43CBE85-A2D1-437A-B867-AB243156A637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F43CBE85-A2D1-437A-B867-AB243156A637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F43CBE85-A2D1-437A-B867-AB243156A637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A5D77AB-2239-456E-9E0F-5C3C2B77491D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5D77AB-2239-456E-9E0F-5C3C2B77491D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5D77AB-2239-456E-9E0F-5C3C2B77491D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5D77AB-2239-456E-9E0F-5C3C2B77491D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C410EBF9-5177-49A6-9F01-6FA660C75BBB} = {B189C946-CFC4-4014-952F-3A19D7A6763A}
+		{F9FB8FAD-E6E5-4009-86E4-2E572E01A014} = {C410EBF9-5177-49A6-9F01-6FA660C75BBB}
 	EndGlobalSection
 EndGlobal
