@@ -16,5 +16,7 @@ namespace SpiritualCare.Model.Activity.CareContact
         [Index("IDX_CareContact_Person", IsUnique = true, Order = 2)]
         [Required]
         public long Person_ID { get; set; }
+        public DateTime Last_Confession_Date { get; set; }
+        public DateTime Last_Communion_Date { get; set; }
     }
 }
