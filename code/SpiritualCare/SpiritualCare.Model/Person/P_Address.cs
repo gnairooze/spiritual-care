@@ -28,6 +28,10 @@ namespace SpiritualCare.Model.Person
         [Required]
         [MaxLength(20)]
         public string Country { get; set; }
+        [Required]
+        public int FloorNo { get; set; }
+        [Required]
+        public int ApartmentNo { get; set; }
         public string Comment { get; set; }
         [Required]
         [Index]
