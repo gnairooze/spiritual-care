@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_Country/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_Country(long id, L_Country l_Country)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_Country);
         }
 
         // POST: api/L_Country
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_Country/5
         [ResponseType(typeof(L_Country))]
+        [HttpPost]
         public IHttpActionResult DeleteL_Country(long id)
         {
             L_Country l_Country = db.L_Countries.Find(id);

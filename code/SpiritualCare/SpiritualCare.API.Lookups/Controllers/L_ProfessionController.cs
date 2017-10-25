@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_Profession/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_Profession(long id, L_Profession l_Profession)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_Profession);
         }
 
         // POST: api/L_Profession
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_Profession/5
         [ResponseType(typeof(L_Profession))]
+        [HttpPost]
         public IHttpActionResult DeleteL_Profession(long id)
         {
             L_Profession l_Profession = db.L_Professions.Find(id);

@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_City/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_City(long id, L_City l_City)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_City);
         }
 
         // POST: api/L_City
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_City/5
         [ResponseType(typeof(L_City))]
+        [HttpPost]
         public IHttpActionResult DeleteL_City(long id)
         {
             L_City l_City = db.L_Cities.Find(id);

@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_FamilyRole/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_FamilyRole(long id, L_FamilyRole l_FamilyRole)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_FamilyRole);
         }
 
         // POST: api/L_FamilyRole
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_FamilyRole/5
         [ResponseType(typeof(L_FamilyRole))]
+        [HttpPost]
         public IHttpActionResult DeleteL_FamilyRole(long id)
         {
             L_FamilyRole l_FamilyRole = db.L_FamilyRoles.Find(id);

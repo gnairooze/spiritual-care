@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_Diocese/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_Diocese(long id, L_Diocese l_Diocese)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_Diocese);
         }
 
         // POST: api/L_Diocese
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_Diocese/5
         [ResponseType(typeof(L_Diocese))]
+        [HttpPost]
         public IHttpActionResult DeleteL_Diocese(long id)
         {
             L_Diocese l_Diocese = db.L_Dioceses.Find(id);

@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_Job/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_Job(long id, L_Job l_Job)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_Job);
         }
 
         // POST: api/L_Job
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_Job/5
         [ResponseType(typeof(L_Job))]
+        [HttpPost]
         public IHttpActionResult DeleteL_Job(long id)
         {
             L_Job l_Job = db.L_Jobs.Find(id);

@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_ChurchService/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_ChurchService(long id, L_ChurchService l_ChurchService)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_ChurchService);
         }
 
         // POST: api/L_ChurchService
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_ChurchService/5
         [ResponseType(typeof(L_ChurchService))]
+        [HttpPost]
         public IHttpActionResult DeleteL_ChurchService(long id)
         {
             L_ChurchService l_ChurchService = db.L_ChurchServices.Find(id);

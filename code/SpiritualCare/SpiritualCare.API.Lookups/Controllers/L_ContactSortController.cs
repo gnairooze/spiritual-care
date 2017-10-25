@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_ContactSort/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_ContactSort(long id, L_ContactSort l_ContactSort)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_ContactSort);
         }
 
         // POST: api/L_ContactSort
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_ContactSort/5
         [ResponseType(typeof(L_ContactSort))]
+        [HttpPost]
         public IHttpActionResult DeleteL_ContactSort(long id)
         {
             L_ContactSort l_ContactSort = db.L_ContactSorts.Find(id);

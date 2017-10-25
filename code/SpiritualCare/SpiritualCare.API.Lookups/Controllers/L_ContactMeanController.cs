@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_ContactMean/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_ContactMean(long id, L_ContactMean l_ContactMean)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_ContactMean);
         }
 
         // POST: api/L_ContactMean
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_ContactMean/5
         [ResponseType(typeof(L_ContactMean))]
+        [HttpPost]
         public IHttpActionResult DeleteL_ContactMean(long id)
         {
             L_ContactMean l_ContactMean = db.L_ContactMeans.Find(id);

@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_Street/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_Street(long id, L_Street l_Street)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_Street);
         }
 
         // POST: api/L_Street
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_Street/5
         [ResponseType(typeof(L_Street))]
+        [HttpPost]
         public IHttpActionResult DeleteL_Street(long id)
         {
             L_Street l_Street = db.L_Streets.Find(id);

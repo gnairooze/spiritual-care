@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_Father/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_Father(long id, L_Father l_Father)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_Father);
         }
 
         // POST: api/L_Father
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_Father/5
         [ResponseType(typeof(L_Father))]
+        [HttpPost]
         public IHttpActionResult DeleteL_Father(long id)
         {
             L_Father l_Father = db.L_Fathers.Find(id);

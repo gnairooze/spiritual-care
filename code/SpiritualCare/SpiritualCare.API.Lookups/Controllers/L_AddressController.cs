@@ -17,13 +17,13 @@ namespace SpiritualCare.API.Lookups.Controllers
     {
         private SpiritualCareContext db = new SpiritualCareContext();
 
-        // GET: api/L_Address
+        // GET: api/L_Address/GetL_AddressTypes
         public IQueryable<L_Address> GetL_AddressTypes()
         {
             return db.L_AddressTypes;
         }
 
-        // GET: api/L_Address/5
+        // GET: api/L_Address/GetL_Address/5
         [ResponseType(typeof(L_Address))]
         public IHttpActionResult GetL_Address(long id)
         {
@@ -36,8 +36,9 @@ namespace SpiritualCare.API.Lookups.Controllers
             return Ok(l_Address);
         }
 
-        // PUT: api/L_Address/5
+        // PUT: api/L_Address/PutL_Address/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_Address(long id, L_Address l_Address)
         {
             if (!ModelState.IsValid)
@@ -68,10 +69,10 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_Address);
         }
 
-        // POST: api/L_Address
+        // POST: api/L_Address/PostL_Address
         [ResponseType(typeof(L_Address))]
         public IHttpActionResult PostL_Address(L_Address l_Address)
         {
@@ -86,8 +87,9 @@ namespace SpiritualCare.API.Lookups.Controllers
             return CreatedAtRoute("DefaultApi", new { id = l_Address.ID }, l_Address);
         }
 
-        // DELETE: api/L_Address/5
+        // DELETE: api/L_Address/DeleteL_Address/5
         [ResponseType(typeof(L_Address))]
+        [HttpPost]
         public IHttpActionResult DeleteL_Address(long id)
         {
             L_Address l_Address = db.L_AddressTypes.Find(id);

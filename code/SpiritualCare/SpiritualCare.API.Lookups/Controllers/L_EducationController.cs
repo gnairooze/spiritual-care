@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_Education/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_Education(long id, L_Education l_Education)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_Education);
         }
 
         // POST: api/L_Education
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_Education/5
         [ResponseType(typeof(L_Education))]
+        [HttpPost]
         public IHttpActionResult DeleteL_Education(long id)
         {
             L_Education l_Education = db.L_EducationKinds.Find(id);

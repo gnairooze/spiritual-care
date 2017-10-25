@@ -38,6 +38,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // PUT: api/L_Meeting/5
         [ResponseType(typeof(void))]
+        [HttpPost]
         public IHttpActionResult PutL_Meeting(long id, L_Meeting l_Meeting)
         {
             if (!ModelState.IsValid)
@@ -68,7 +69,7 @@ namespace SpiritualCare.API.Lookups.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(l_Meeting);
         }
 
         // POST: api/L_Meeting
@@ -88,6 +89,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
         // DELETE: api/L_Meeting/5
         [ResponseType(typeof(L_Meeting))]
+        [HttpPost]
         public IHttpActionResult DeleteL_Meeting(long id)
         {
             L_Meeting l_Meeting = db.L_Meetings.Find(id);
