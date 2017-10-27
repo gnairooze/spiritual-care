@@ -42,6 +42,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.API.Workflow"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiritualCare.API.Workflow.Tests", "SpiritualCare.API.Workflow.Tests\SpiritualCare.API.Workflow.Tests.csproj", "{FD5573C9-8742-4547-827D-1767ED2D1C9F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpiritualCare", "SpiritualCare", "{FC46F753-F5B8-421A-BD64-B0F88A75F6DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{53364211-7518-460F-9805-6E441A50195D}"
+	ProjectSection(SolutionItems) = preProject
+		Add Cities - ar.sql = Add Cities - ar.sql
+		Add Cities - en.sql = Add Cities - en.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,5 +123,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C410EBF9-5177-49A6-9F01-6FA660C75BBB} = {B189C946-CFC4-4014-952F-3A19D7A6763A}
 		{F9FB8FAD-E6E5-4009-86E4-2E572E01A014} = {C410EBF9-5177-49A6-9F01-6FA660C75BBB}
+		{FC46F753-F5B8-421A-BD64-B0F88A75F6DD} = {B189C946-CFC4-4014-952F-3A19D7A6763A}
+		{53364211-7518-460F-9805-6E441A50195D} = {FC46F753-F5B8-421A-BD64-B0F88A75F6DD}
 	EndGlobalSection
 EndGlobal
