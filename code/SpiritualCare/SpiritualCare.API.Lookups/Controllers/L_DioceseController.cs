@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_Diocese/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_Diocese))]
         [HttpPost]
         public IHttpActionResult PutL_Diocese(long id, L_Diocese l_Diocese)
         {

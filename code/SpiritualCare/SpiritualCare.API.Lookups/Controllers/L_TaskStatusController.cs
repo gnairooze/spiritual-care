@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_TaskStatus/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_TaskStatus))]
         [HttpPost]
         public IHttpActionResult PutL_TaskStatus(long id, L_TaskStatus l_TaskStatus)
         {

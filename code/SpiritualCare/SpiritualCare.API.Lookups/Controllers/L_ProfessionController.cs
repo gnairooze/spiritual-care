@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_Profession/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_Profession))]
         [HttpPost]
         public IHttpActionResult PutL_Profession(long id, L_Profession l_Profession)
         {

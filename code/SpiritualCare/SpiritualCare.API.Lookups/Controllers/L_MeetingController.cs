@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_Meeting/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_Meeting))]
         [HttpPost]
         public IHttpActionResult PutL_Meeting(long id, L_Meeting l_Meeting)
         {

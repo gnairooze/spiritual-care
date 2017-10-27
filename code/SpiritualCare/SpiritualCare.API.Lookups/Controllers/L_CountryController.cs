@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_Country/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_Country))]
         [HttpPost]
         public IHttpActionResult PutL_Country(long id, L_Country l_Country)
         {

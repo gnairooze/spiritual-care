@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_ContactSort/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_ContactSort))]
         [HttpPost]
         public IHttpActionResult PutL_ContactSort(long id, L_ContactSort l_ContactSort)
         {

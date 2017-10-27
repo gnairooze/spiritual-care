@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_SocialStatus/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_SocialStatus))]
         [HttpPost]
         public IHttpActionResult PutL_SocialStatus(long id, L_SocialStatus l_SocialStatus)
         {

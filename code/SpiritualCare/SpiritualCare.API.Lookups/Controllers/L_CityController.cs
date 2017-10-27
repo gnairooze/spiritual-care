@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_City/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_City))]
         [HttpPost]
         public IHttpActionResult PutL_City(long id, L_City l_City)
         {

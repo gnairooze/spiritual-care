@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_Address/PutL_Address/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_Address))]
         [HttpPost]
         public IHttpActionResult PutL_Address(long id, L_Address l_Address)
         {

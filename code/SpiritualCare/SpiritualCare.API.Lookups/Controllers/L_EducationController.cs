@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_Education/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_Education))]
         [HttpPost]
         public IHttpActionResult PutL_Education(long id, L_Education l_Education)
         {

@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_ContactMean/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_ContactMean))]
         [HttpPost]
         public IHttpActionResult PutL_ContactMean(long id, L_ContactMean l_ContactMean)
         {

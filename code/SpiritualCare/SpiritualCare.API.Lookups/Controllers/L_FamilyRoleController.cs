@@ -37,7 +37,7 @@ namespace SpiritualCare.API.Lookups.Controllers
         }
 
         // PUT: api/L_FamilyRole/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(L_FamilyRole))]
         [HttpPost]
         public IHttpActionResult PutL_FamilyRole(long id, L_FamilyRole l_FamilyRole)
         {
