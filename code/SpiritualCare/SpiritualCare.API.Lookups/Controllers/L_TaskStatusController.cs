@@ -103,7 +103,13 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_TaskStatus);
         }
-
+        // OPTIONS: api/L_TaskStatus
+        // for use with angular framework
+        [HttpOptions]
+        public IHttpActionResult OptionsL_TaskStatus()
+        {
+            return Ok();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

@@ -103,7 +103,13 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_ContactMean);
         }
-
+        // OPTIONS: api/L_ContactMean
+        // for use with angular framework
+        [HttpOptions]
+        public IHttpActionResult OptionsL_ContactMean()
+        {
+            return Ok();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

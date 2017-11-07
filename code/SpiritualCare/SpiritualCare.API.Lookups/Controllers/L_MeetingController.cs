@@ -103,7 +103,13 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_Meeting);
         }
-
+        // OPTIONS: api/L_Meeting
+        // for use with angular framework
+        [HttpOptions]
+        public IHttpActionResult OptionsL_Meeting()
+        {
+            return Ok();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

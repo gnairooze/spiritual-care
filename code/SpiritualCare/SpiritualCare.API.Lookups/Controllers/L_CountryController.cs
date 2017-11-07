@@ -103,7 +103,13 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_Country);
         }
-
+        // OPTIONS: api/L_Country
+        // for use with angular framework
+        [HttpOptions]
+        public IHttpActionResult OptionsL_Country()
+        {
+            return Ok();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

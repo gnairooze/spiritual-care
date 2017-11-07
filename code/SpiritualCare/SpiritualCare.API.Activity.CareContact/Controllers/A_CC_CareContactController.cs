@@ -104,6 +104,14 @@ namespace SpiritualCare.API.Activity.CareContact.Controllers
             return Ok(a_CC_CareContact);
         }
 
+        // OPTIONS: api/A_CC_CareContact
+        // for use with angular framework
+        [HttpOptions]
+        public IHttpActionResult OptionsA_CC_CareContact()
+        {
+            return Ok();
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

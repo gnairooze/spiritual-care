@@ -103,7 +103,13 @@ namespace SpiritualCare.API.Person.Controllers
 
             return Ok(p_Person_Actual_Meeting);
         }
-
+        // OPTIONS: api/P_Person_Actual_Meeting
+        // for use with angular framework
+        [HttpOptions]
+        public IHttpActionResult OptionsP_Person_Actual_Meeting()
+        {
+            return Ok();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

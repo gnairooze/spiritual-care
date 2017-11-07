@@ -103,7 +103,13 @@ namespace SpiritualCare.API.Person.Controllers
 
             return Ok(p_Viber);
         }
-
+        // OPTIONS: api/P_Viber
+        // for use with angular framework
+        [HttpOptions]
+        public IHttpActionResult OptionsP_Viber()
+        {
+            return Ok();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)
