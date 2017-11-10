@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_Church);
         }
-        // OPTIONS: api/L_Church
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsL_Church()
-        {
-            return Ok();
-        }
+       
         protected override void Dispose(bool disposing)
         {
             if (disposing)

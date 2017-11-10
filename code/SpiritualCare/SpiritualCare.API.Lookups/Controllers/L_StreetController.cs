@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_Street);
         }
-        // OPTIONS: api/L_Street
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsL_Street()
-        {
-            return Ok();
-        }
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)

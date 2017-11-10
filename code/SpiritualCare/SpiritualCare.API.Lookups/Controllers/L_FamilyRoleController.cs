@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_FamilyRole);
         }
-        // OPTIONS: api/L_FamilyRole
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsL_FamilyRole()
-        {
-            return Ok();
-        }
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)

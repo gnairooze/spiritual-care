@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Workflow.Controllers
 
             return Ok(t_TaskServant);
         }
-        // OPTIONS: api/T_TaskServant
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsT_TaskServant()
-        {
-            return Ok();
-        }
+       
         protected override void Dispose(bool disposing)
         {
             if (disposing)

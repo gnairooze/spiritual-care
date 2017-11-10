@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Person.Controllers
 
             return Ok(p_WhatsApp);
         }
-        // OPTIONS: api/P_WhatsApp
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsP_WhatsApp()
-        {
-            return Ok();
-        }
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)

@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_Address);
         }
-        // OPTIONS: api/L_Address
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsL_Address()
-        {
-            return Ok();
-        }
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)

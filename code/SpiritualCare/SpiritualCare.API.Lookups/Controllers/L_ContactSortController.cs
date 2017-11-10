@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_ContactSort);
         }
-        // OPTIONS: api/L_ContactSort
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsL_ContactSort()
-        {
-            return Ok();
-        }
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)

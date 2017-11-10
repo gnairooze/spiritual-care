@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_Profession);
         }
-        // OPTIONS: api/L_Profession
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsL_Profession()
-        {
-            return Ok();
-        }
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)

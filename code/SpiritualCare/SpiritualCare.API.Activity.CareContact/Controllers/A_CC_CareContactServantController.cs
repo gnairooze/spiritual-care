@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Activity.CareContact.Controllers
 
             return Ok(a_CC_CareContactServant);
         }
-        // OPTIONS: api/A_CC_CareContactServant
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsA_CC_CareContactServant()
-        {
-            return Ok();
-        }
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)

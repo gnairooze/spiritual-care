@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Lookups.Controllers
 
             return Ok(l_Father);
         }
-        // OPTIONS: api/L_Father
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsL_Father()
-        {
-            return Ok();
-        }
+       
         protected override void Dispose(bool disposing)
         {
             if (disposing)

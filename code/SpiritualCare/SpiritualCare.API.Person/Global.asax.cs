@@ -19,5 +19,29 @@ namespace SpiritualCare.API.Person
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        protected void Application_BeginRequest()
+        {
+            var currentRequest = HttpContext.Current.Request;
+            var currentResponse = HttpContext.Current.Response;
+            var currentApplication = HttpContext.Current.ApplicationInstance;
+
+            var currentRequestOrigin = currentRequest.Headers["Origin"];
+
+            if (currentRequest.HttpMethod.ToLower() == "options" && currentRequestOrigin != null && originAllowed(currentRequestOrigin))
+            {
+                currentResponse.StatusCode = 200;
+                currentResponse.Flush(); // Sends all currently buffered output to the client.
+                currentApplication.CompleteRequest(); // Causes ASP.NET to bypass all events and filtering in the HTTP pipeline chain of execution and directly execute the EndRequest event.
+            }
+        }
+
+        private bool originAllowed(string currentRequestOrigin)
+        {
+            currentRequestOrigin = currentRequestOrigin.ToLower().Trim();
+
+            return SpiritualCare.API.Person.Properties.Settings.Default.AllowOrigins.IndexOf(currentRequestOrigin) >= 0;
+
+        }
     }
 }

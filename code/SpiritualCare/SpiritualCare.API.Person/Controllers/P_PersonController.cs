@@ -103,13 +103,7 @@ namespace SpiritualCare.API.Person.Controllers
 
             return Ok(p_Person);
         }
-        // OPTIONS: api/P_Person
-        // for use with angular framework
-        [HttpOptions]
-        public IHttpActionResult OptionsP_Person()
-        {
-            return Ok();
-        }
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)
