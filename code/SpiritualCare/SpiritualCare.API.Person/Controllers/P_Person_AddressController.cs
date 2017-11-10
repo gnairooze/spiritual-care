@@ -36,6 +36,19 @@ namespace SpiritualCare.API.Person.Controllers
             return Ok(p_Person_Address);
         }
 
+        // GET: api/P_Person_Address/GetP_Person_AddressByPersonId/5
+        [ResponseType(typeof(IQueryable<P_Person_Address>))]
+        public IHttpActionResult GetP_Person_AddressByPersonId(long personId)
+        {
+            IQueryable<P_Person_Address> p_Person_Address = db.P_Person_Addresses.Where(r => r.Person_ID == personId);
+            if (p_Person_Address == null || p_Person_Address.Count() == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(p_Person_Address);
+        }
+
         // PUT: api/P_Person_Address/5
         [ResponseType(typeof(P_Person_Address))]
         [HttpPost]
