@@ -35,8 +35,6 @@ namespace SpiritualCare.TempWWW
             MailMessage msgMail = new MailMessage(smtpSection.From, message.Destination, message.Subject, message.Body);
             msgMail.IsBodyHtml = true;
             smtpClient.Send(msgMail);
-
-            smtpClient.Send(msgMail);
         }
     }
 

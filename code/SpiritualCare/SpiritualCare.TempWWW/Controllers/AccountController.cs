@@ -180,7 +180,7 @@ namespace SpiritualCare.TempWWW.Controllers
 
                     // Uncomment to debug locally 
                     // TempData["ViewBagLink"] = callbackUrl;
-
+                    ViewBag.Message = "Please check your email for confirmation message.";
                     return View("Info");
                     //return RedirectToAction("Index", "Home");
                 }
