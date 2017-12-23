@@ -11,6 +11,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using SpiritualCare.TempWWW.Models;
+using System.Net.Configuration;
+using System.Configuration;
+using System.Net.Mail;
 
 namespace SpiritualCare.TempWWW
 {
@@ -19,7 +22,21 @@ namespace SpiritualCare.TempWWW
         public Task SendAsync(IdentityMessage message)
         {
             // Plug in your email service here to send an email.
-            return Task.FromResult(0);
+
+            return Task.Run(() => sendMail(message));
+        }
+
+        private void sendMail(IdentityMessage message)
+        {
+            var smtpSection = (SmtpSection)ConfigurationManager.GetSection("system.net/mailSettings/smtp");
+
+            SmtpClient smtpClient = new SmtpClient();
+
+            MailMessage msgMail = new MailMessage(smtpSection.From, message.Destination, message.Subject, message.Body);
+            msgMail.IsBodyHtml = true;
+            smtpClient.Send(msgMail);
+
+            smtpClient.Send(msgMail);
         }
     }
 

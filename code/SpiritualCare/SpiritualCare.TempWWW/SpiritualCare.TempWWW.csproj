@@ -506,6 +506,7 @@
     <Content Include="Views\T_TaskServant\Details.cshtml" />
     <Content Include="Views\T_TaskServant\Edit.cshtml" />
     <Content Include="Views\T_TaskServant\Index.cshtml" />
+    <Content Include="Views\Shared\Info.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
