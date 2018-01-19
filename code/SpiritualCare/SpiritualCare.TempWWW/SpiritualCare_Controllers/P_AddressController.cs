@@ -47,7 +47,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,AddressType,StreetNo,StreetName,City,Governerate,Country,Comment,IsDefault,GPS_Long,GPS_Lat,Created,Modified")] P_Address p_Address)
+        public ActionResult Create([Bind(Include = "ID,AddressType,ApartmentNo,FloorNo,StreetNo,StreetName,City,Governerate,Country,Comment,IsDefault,GPS_Long,GPS_Lat,Created,Modified")] P_Address p_Address)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace SpiritualCare.TempWWW.SpiritualCare_Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,AddressType,StreetNo,StreetName,City,Governerate,Country,Comment,IsDefault,GPS_Long,GPS_Lat,Created,Modified")] P_Address p_Address)
+        public ActionResult Edit([Bind(Include = "ID,AddressType,ApartmentNo,FloorNo,StreetNo,StreetName,City,Governerate,Country,Comment,IsDefault,GPS_Long,GPS_Lat,Created,Modified")] P_Address p_Address)
         {
             if (ModelState.IsValid)
             {
